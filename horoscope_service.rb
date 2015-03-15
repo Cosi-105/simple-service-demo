@@ -12,7 +12,7 @@ class HoroscopeService < Sinatra::Base
     ActiveRecord::Base.establish_connection(databases[env])
   end
 
-  get '/fortune/:date/:sign/' do
+  get '/fortune/:date/:sign/' do 
     @f = Fortune.offset(rand(Fortune.count)).take
     @f.fortune.to_json
   end
