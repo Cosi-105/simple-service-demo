@@ -6,13 +6,13 @@ ruby '2.1.5'
 gem "sinatra"
 gem "activerecord"
 gem "sinatra-activerecord"
-gem 'pry-rails'
-gem 'pry-byebug'
 gem 'faker'
 
 group :development do
   gem 'sqlite3'
   gem 'shotgun'
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :production do
