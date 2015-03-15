@@ -5,9 +5,15 @@ source "https://rubygems.org"
 gem "sinatra"
 gem "activerecord"
 gem "sinatra-activerecord"
-gem 'sqlite3'
-gem "pg"
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'faker'
-gem 'shotgun'
+
+group :development do
+  gem 'sqlite3'
+  gem 'shotgun'
+end
+
+group :production do
+  gem 'pg'
+end
