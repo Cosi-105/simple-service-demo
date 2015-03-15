@@ -1,7 +1,5 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require 'pry'
-require 'pry-byebug'
 require 'erb'
 require_relative './models/fortune'
 
